@@ -1,0 +1,16 @@
+version: '3'
+services:
+  # react-app-dev:
+  #   build: .
+  #   volumes:
+  #     # - /var/www/react-app-dev-docker/node_modules
+  #     - .:/var/www/react-app-dev-docker
+  #   ports:
+  #     - 3000:3000
+  react-app:
+    build: .
+    volumes:
+      # - /var/www/react-app-production-docker/node_modules
+      - .:/var/www/react-app-production-docker
+    ports:
+      - 3000:3000
