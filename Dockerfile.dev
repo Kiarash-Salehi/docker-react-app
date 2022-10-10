@@ -6,4 +6,6 @@ WORKDIR /var/www/react-app-dev-docker
 # RUN npm install
 # COPY . .
 
+EXPOSE 80
+
 CMD ["npm", "start"]
