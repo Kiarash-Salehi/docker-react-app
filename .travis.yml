@@ -1,0 +1,7 @@
+sudo: required
+services:
+  - docker
+before_install:
+  - docker build -t ksdev82/docker-react-app -f Dockerfile.dev .
+scripts:
+  - docker run ksdev82/docker-react-app npm run test -- --coverage
