@@ -1,11 +1,4 @@
-FROM node:alpine
-
-WORKDIR /var/www/react-app-dev-docker
-
-# COPY package.json .
-# RUN npm install
-# COPY . .
-
-EXPOSE 80
-
+FROM node:16.5.0
+WORKDIR /var/www
+EXPOSE 3000
 CMD ["npm", "start"]
